@@ -30,7 +30,7 @@ Dashboard
 </li>
 <li class="nav-item">
 <a href="<?= base_url; ?>/kategori" class="nav-link">
-<i class="nav-icon fas fa-copy"></i>
+<i class="nav-icon fas fa-list-ul"></i>
 <p>
 Kategori
 </p>
@@ -38,9 +38,9 @@ Kategori
 </li>
 <li class="nav-item">
 <a href="<?= base_url; ?>/buku" class="nav-link">
-<i class="nav-icon fas fa-book"></i>
+<i class="nav-icon fas fa-motorcycle"></i>
 <p>
-Buku
+Sepedah Motor
 </p>
 </a>
 </li>

@@ -62,7 +62,8 @@ class BukuModel {
     public function cariBuku()
     {
     $key = $_POST['key'];
-    $this->db->query("SELECT * FROM " . $this->table . " WHERE judul LIKE :key");
+    //$this->db->query("SELECT * FROM " . $this->table . " WHERE judul LIKE :key");
+    $this->db->query("SELECT buku.*, kategori.nama_kategori FROM " . $this->table . " JOIN kategori ON kategori.id = buku.kategori_id WHERE judul LIKE :key");
     $this->db->bind('key', "%$key%");
     return $this->db->resultSet();
     }

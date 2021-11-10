@@ -20,10 +20,10 @@
 <!-- Default box -->
 <div class="card">
 <div class="card-header">
-<h3 class="card-title"><?= $data['title'] ?></h3> <a href="<?= base_url;
-?>/kategori/tambah" class="btn float-right btn-xs btn btn-primary">Tambah Kategori</a>
+<h3 class="card-title"><?= $data['title'] ?></h3> 
+<a href="<?= base_url;?>/kategori/tambah" class="btn btn-primary float-right">Tambah Kategori</a>
 </div>
-<div class="card-body">
+<div class="card-body ">
 <form action="<?= base_url; ?>/kategori/cari" method="post">
 <div class="row mb-3">
 <div class="col-lg-6">
@@ -52,8 +52,8 @@
 <td><?= $no; ?></td>
 <td><?= $row['nama_kategori'];?></td>
 <td>
-
-<a href="<?= base_url; ?>/kategori/edit/<?= $row['id'] ?>" class="badge badge-info">Edit</a> <a href="<?= base_url; ?>/kategori/hapus/<?= $row['id'] ?>" class="badge badge-danger" onclick="return confirm('Hapus data?');">Hapus</a>
+<a href="<?= base_url; ?>/kategori/edit/<?= $row['id'] ?>" class="btn btn-warning fa fa-edit"></a>
+<a href="<?= base_url; ?>/kategori/hapus/<?= $row['id'] ?>" class="btn btn-danger fa fa-trash-alt" onclick="return confirm('Hapus data?');"></a>
 </td>
 </tr>
 <?php $no++; endforeach; ?>
