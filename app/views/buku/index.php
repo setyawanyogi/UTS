@@ -23,9 +23,9 @@ Flasher::Message();
 <div class="card">
 <div class="card-header">
 <h3 class="card-title"><?= $data['title'] ?></h3> <div class="btn-group float-right">
-    <a href="<?= base_url; ?>/buku/tambah" class="btn float-right btn-xs btn btn-primary">Tambah Buku</a>
-    <a href="<?= base_url; ?>/buku/laporan" class="btn float-right btn-xs btn btn-info">Laporan Buku</a>
-    <a href="<?= base_url; ?>/buku/lihatlaporan" target="_blank" class="btn float-right btn-xs btn btn-warning">Lihat Laporan Buku</a>
+    <a href="<?= base_url; ?>/buku/tambah" class="btn fas btn-primary float-right fa fa-plus"></a>
+    <a href="<?= base_url; ?>/buku/laporan" class="btn fas float-right btn-info fa fa-download"></a>
+    <a href="<?= base_url; ?>/buku/lihatlaporan" target="_blank" class="btn fas float-right btn-warning fa fa-file-alt"></a>
     </div>
 </div>
 <div class="card-body">
@@ -46,9 +46,9 @@ Flasher::Message();
 <thead>
 <tr>
 <th style="width: 10px">#</th>
-<th>Judul</th>
-<th>Penerbit</th>
-<th>Pengarang</th>
+<th>Nama</th>
+<th>Pabrikan</th>
+<th>Kapasitas</th>
 <th>Tahun</th>
 <th>Kategori</th>
 <th>Harga</th>
@@ -64,13 +64,18 @@ Flasher::Message();
 <td><?= $row['penerbit'];?></td>
 <td><?= $row['pengarang'];?></td>
 <td><?= $row['tahun'];?></td>
-<td><div class="badge badge-warning"><?= $row['nama_kategori'];?></div></td>
-<td><?= $row['harga'];?></td>
+<td><div class="badge bg-primary"><?= $row['nama_kategori'];?></div></td>
+<td>Rp. <?php
+        $number = $row['harga'];
+        echo number_format($number, 0, ",", ".");
+?>
+</td>
 <td>
 
 
 
-<a href="<?= base_url; ?>/buku/edit/<?= $row['id'] ?>" class="badge badge-info">Edit</a> <a href="<?= base_url; ?>/buku/hapus/<?= $row['id'] ?>" class="badge badge-danger" onclick="return confirm('Hapus data?');">Hapus</a>
+<a href="<?= base_url; ?>/buku/edit/<?= $row['id'] ?>" class="btn fas btn-warning fa fa-edit"></a> 
+<a href="<?= base_url; ?>/buku/hapus/<?= $row['id'] ?>" class="btn fas btn-danger fa fa-trash" onclick="return confirm('Hapus data?');"></a>
 
 </td>
 </tr>
@@ -80,7 +85,6 @@ Flasher::Message();
 </div>
 <!-- /.card-body -->
 <div class="card-footer">
-Footer
 </div>
 <!-- /.card-footer-->
 </div>

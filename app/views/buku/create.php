@@ -22,18 +22,18 @@
 enctype="multipart/form-data">
 <div class="card-body">
 <div class="form-group">
-<label >Judul</label>
-<input type="text" class="form-control" placeholder="masukkan judul buku..."
+<label >Nama</label>
+<input type="text" class="form-control" placeholder="masukkan nama..."
 name="judul">
 </div>
 <div class="form-group">
-<label >Penerbit</label>
-<input type="text" class="form-control" placeholder="masukkan penerbit buku..."
+<label >Pabrikan</label>
+<input type="text" class="form-control" placeholder="masukkan pabrikan..."
 name="penerbit">
 </div>
 <div class="form-group">
-<label >Pengarang</label>
-<input type="text" class="form-control" placeholder="masukkan pengarang buku..." name="pengarang">
+<label >Kapasitas</label>
+<input type="text" class="form-control" placeholder="masukkan kapasitas..." name="pengarang">
 </div>
 <div class="form-group">
 <label >Tahun</label>
@@ -51,13 +51,14 @@ name="tahun">
 </div>
 <div class="form-group">
 <label >Harga</label>
-<input type="text" class="form-control" placeholder="masukkan harga buku..."
+<input type="text" class="form-control" placeholder="masukkan harga..."
 name="harga">
 </div>
 </div>
 <!-- /.card-body -->
 <div class="card-footer">
 <button type="submit" class="btn btn-primary">Submit</button>
+<a class="btn btn-danger" href="<?= base_url; ?>/buku" >Cancel</a>
 </div>
 </form>
 </div>

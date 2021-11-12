@@ -82,9 +82,13 @@ text-shadow: 1px 1px 1px #fff;
 <td><?= $row['penerbit'];?></td>
 <td><?= $row['pengarang'];?></td>
 <td><?= $row['tahun'];?></td>
-<td><div class="badge badge-warning"><?=
+<td><div class="badge bg-primary"><?=
 $row['nama_kategori'];?></div></td>
-<td><?= $row['harga'];?></td>
+<td>Rp. <?php
+        $number = $row['harga'];
+        echo number_format($number, 0, ",", ".");
+?>
+</td>
 </tr>
 <?php $no++; endforeach; ?>
 </tbody>

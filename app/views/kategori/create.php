@@ -30,6 +30,7 @@ name="nama_kategori">
 <!-- /.card-body -->
 <div class="card-footer">
 <button type="submit" class="btn btn-primary">Submit</button>
+<a class="btn btn-danger" href="<?= base_url; ?>/kategori" >Cancel</a>
 </div>
 </form>
 </div>

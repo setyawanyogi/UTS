@@ -1,5 +1,5 @@
 <footer class="main-footer">
-<b>Bukita 2019</b> All rights reserved.
+<b>Astra Motor</b> All rights reserved.
 </footer>
 <!-- Control Sidebar -->
 <aside class="control-sidebar control-sidebar-dark">

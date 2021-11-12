@@ -11,7 +11,7 @@ public function __construct()
 
 public function index()
 {
-$data['title'] = 'Data Buku';
+$data['title'] = 'Data Sepeda Motor';
 $data['buku'] = $this->model('BukuModel')->getAllBuku();
 $this->view('templates/header', $data);
 $this->view('templates/sidebar', $data);
@@ -86,7 +86,7 @@ public function cari(){
 
 public function lihatlaporan()
 {
-    $data['title'] = 'Data Laporan Buku';
+    $data['title'] = 'Data Laporan Sepeda Motor';
     $data['buku'] = $this->model('BukuModel')->getAllBuku();
     $this->view('buku/lihatlaporan', $data);
 }

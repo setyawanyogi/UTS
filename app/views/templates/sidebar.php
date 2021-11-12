@@ -2,7 +2,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
 <!-- Brand Logo -->
 <a href="<?= base_url; ?>/home" class="brand-link">
-<span class="brand-text font-weight-light">Buku Kita</span>
+<span class="brand-text font-weight-light">Astra Motor</span>
 </a>
 
 <!-- Sidebar -->

@@ -53,7 +53,7 @@
 <td><?= $row['nama_kategori'];?></td>
 <td>
 <a href="<?= base_url; ?>/kategori/edit/<?= $row['id'] ?>" class="btn btn-warning fa fa-edit"></a>
-<a href="<?= base_url; ?>/kategori/hapus/<?= $row['id'] ?>" class="btn btn-danger fa fa-trash-alt" onclick="return confirm('Hapus data?');"></a>
+<a href="<?= base_url; ?>/kategori/hapus/<?= $row['id'] ?>" class="btn btn-danger fa fa-trash" onclick="return confirm('Hapus data?');"></a>
 </td>
 </tr>
 <?php $no++; endforeach; ?>
