@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 10, 2021 at 11:16 AM
+-- Generation Time: Nov 13, 2021 at 05:29 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -42,9 +42,10 @@ CREATE TABLE `buku` (
 --
 
 INSERT INTO `buku` (`id`, `judul`, `penerbit`, `pengarang`, `tahun`, `kategori_id`, `harga`) VALUES
-(2, 'Jujutsu Kaisen', 'Agus Blewah', 'Nkiele Otamendi', '2021', 1, 1000),
-(4, 'Kumpulan Cheat PS2', 'Sunardi Lamtone', 'HaCkeR hANdAL', '2022', 5, 500),
-(5, 'IPA', 'Airlangga', 'Drs. Kawaki', '2019', 1, 20000);
+(7, 'Ninja 250SL', 'Kawasaki', '249 cc', '2020', 22, 36900000),
+(9, 'CRF150L', 'Honda', '149.15 cc', '2021', 19, 34740000),
+(10, 'Nmax', 'Yamaha', '155 cc', '2021', 20, 31200000),
+(11, 'Vario 125', 'Honda', '125 cc', '2021', 20, 21500000);
 
 -- --------------------------------------------------------
 
@@ -62,11 +63,12 @@ CREATE TABLE `kategori` (
 --
 
 INSERT INTO `kategori` (`id`, `nama_kategori`) VALUES
-(1, 'Horor'),
-(2, 'Komedi'),
-(3, 'Action'),
-(5, 'Komedi'),
-(6, 'Komedi');
+(17, 'Standard/Naked'),
+(18, 'Cruiser'),
+(19, 'Trail/Off-Road'),
+(20, 'Skuter Matik'),
+(21, 'Bebek'),
+(22, 'Sport');
 
 -- --------------------------------------------------------
 
@@ -120,13 +122,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `buku`
 --
 ALTER TABLE `buku`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `kategori`
 --
 ALTER TABLE `kategori`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `user`
