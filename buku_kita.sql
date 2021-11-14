@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 13, 2021 at 05:29 PM
+-- Generation Time: Nov 14, 2021 at 01:38 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -45,7 +45,10 @@ INSERT INTO `buku` (`id`, `judul`, `penerbit`, `pengarang`, `tahun`, `kategori_i
 (7, 'Ninja 250SL', 'Kawasaki', '249 cc', '2020', 22, 36900000),
 (9, 'CRF150L', 'Honda', '149.15 cc', '2021', 19, 34740000),
 (10, 'Nmax', 'Yamaha', '155 cc', '2021', 20, 31200000),
-(11, 'Vario 125', 'Honda', '125 cc', '2021', 20, 21500000);
+(11, 'Vario 125', 'Honda', '125 cc', '2021', 20, 21500000),
+(12, 'Vixion', 'Yamaha', '149.8 cc', '2021', 17, 28200000),
+(13, 'Satria F150', 'Suzuki', '147.3 cc', '2021', 21, 26760000),
+(14, 'Rebel', 'Honda', '471 cc', '2021', 18, 191960000);
 
 -- --------------------------------------------------------
 
@@ -122,7 +125,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `buku`
 --
 ALTER TABLE `buku`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `kategori`
