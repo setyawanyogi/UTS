@@ -11,7 +11,8 @@ class Home extends Controller {
 
     public function index()
 {
-$data['title'] = 'Halaman Home';
+$data['title'] = 'Home';
+$data['tabel'] = 'Data Count';
 $this->view('templates/header', $data);
 $this->view('templates/sidebar', $data);
 $this->view('home/index', $data);

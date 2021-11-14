@@ -59,6 +59,14 @@ class BukuModel {
     return $this->db->rowCount();
     }
 
+    public function dashboardBuku()
+    {
+        $merek = $_POST['merek'];
+        $this->db->query("SELECT buku.*, kategori.nama_kategori FROM " . $this->table . " JOIN kategori ON kategori.id = buku.kategori_id WHERE pengarang LIKE :merek");
+        $this->db->bind('merek', "%$merek%");
+        return $this->db->resultSet();
+    }
+
     public function cariBuku()
     {
     $key = $_POST['key'];

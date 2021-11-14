@@ -11,9 +11,12 @@ class About extends Controller {
 
     public function index()
 {
-$data['title'] = 'Halaman AboutMe';
-$data['nama'] = 'Pradana Dike';
-$data['alamat'] = 'Ga punya lagi nganggur';
+$data['title'] = 'About Me';
+$data['nama1'] = 'Pradana Dike Rohmat Izzulhaq';
+$data['nama2'] = 'Setyawan Adi Prayogi';
+$data['nim1'] = '18083000200';
+$data['nim2'] = '18083000110';
+$data['alamat'] = 'Malang';
 $data['no_hp'] = '08123745638';
 
 $this->view('templates/header', $data);

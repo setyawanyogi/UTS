@@ -23,15 +23,31 @@
 Nama :
 </div>
 <div class="col-md-10 text-left">
-<?= $data['nama']; ?>
+<?= $data['nama1']; ?>
 </div>
 </div>
 <div class="row">
 <div class="col-md-2 text-right">
-No. Hp :
+Nama :
 </div>
 <div class="col-md-10 text-left">
-<?= $data['no_hp']; ?>
+<?= $data['nama2']; ?>
+</div>
+</div>
+<div class="row">
+<div class="col-md-2 text-right">
+NIM :
+</div>
+<div class="col-md-10 text-left">
+<?= $data['nim1']; ?>
+</div>
+</div>
+<div class="row">
+<div class="col-md-2 text-right">
+NIM :
+</div>
+<div class="col-md-10 text-left">
+<?= $data['nim2']; ?>
 </div>
 </div>
 <div class="row">
@@ -45,7 +61,7 @@ Alamat :
 </div>
 <!-- /.card-body -->
 <div class="card-footer">
-Footer
+
 </div>
 <!-- /.card-footer-->
 </div>
